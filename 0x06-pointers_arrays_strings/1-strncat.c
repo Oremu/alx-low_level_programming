@@ -27,3 +27,4 @@ char *_strncat(char *dest, char *src, int n)
 		len2++;
 	}
 	return (dest);
+}
