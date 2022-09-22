@@ -7,17 +7,15 @@
  *
  * Return: a string
  */
-char *_strcat(char *dset, char *src)
+char *_strcat(char *dest, const char *src)
 {
-	int len = 0, i;
+	int a = 0, dest_len = 0;
 
-	while (dest[len])
-		len++;
-	for (i = 0; src[i] != '\0'; i++)
-	{
-		dest[len] = src[i];
-		len += 1;
-	}
-	dest[len] = '\0';
+	while (dest[a++])
+		dest_len++;
+
+	for (a = 0; src[a]; a++)
+		dset[dest_len++] = src[a];
+
 	return (dest);
 }
