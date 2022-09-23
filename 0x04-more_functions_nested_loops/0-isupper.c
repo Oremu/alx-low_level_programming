@@ -1,10 +1,10 @@
-#include <stdout>
+#include <stdio.h>
 #include "main.h"
 
 /**
  * _isupper - entry point
  * @c: character to check
- * this checks for uppercase characters
+ * Description: this checks for uppercase characters
  * Return: 0
  */
 int _isupper(int c)
