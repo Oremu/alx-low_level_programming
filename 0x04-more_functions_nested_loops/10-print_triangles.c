@@ -6,21 +6,25 @@
  */
 void print_triangle(int size)
 {
-	int height;
-	int width;
-	int draw;
+	int i, j;
 
-	if (size <= 0)
-		_putchar('\n');
-
-	for (height = 1; height <= size; height++)
+	if (size > 0)
 	{
-		for (width = 1; width <= (size - height); width++)
-			_putchar(' ');
-
-		for (draw = 1; draw <= height; draw++)
-			_putchar('#');
-
-		_putchar('\n');
+		for (i = 1; i <= size; i++)
+		{
+			for (j = 1; j <= size; j++)
+			{
+				if (j <= size - i)
+					_putchar(' ');
+				else 
+				{
+					_putchar(35);
+					if (j == size)
+						_putchar('\n');
+				}
+			}
+		}
 	}
+	else
+		_putchar('\n');
 }
