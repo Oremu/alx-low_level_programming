@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.H"
+#include "main.h"
 
 /**
  * mul - entry point
