@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * print_triangle - print triangle with #'s with given size
- * @size: size of triangle to draw
+ * print_triangle - this function prints a triangle
+ * @size: the size of the triangle to print
+ *
  * Return: nothing
  */
 void print_triangle(int size)
@@ -17,7 +18,7 @@ void print_triangle(int size)
 			{
 				if (j <= size - i)
 					_putchar(' ');
-				else 
+				else
 				{
 					_putchar(35);
 					if (j == size)
