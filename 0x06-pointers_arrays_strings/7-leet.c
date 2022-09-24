@@ -10,7 +10,7 @@
 
 char *leet(char *z)
 {
-	inti, j;
+	int i, j;
 	char subs[] = "aAeEoOtTlL";
 	char le[] = "43071";
 
