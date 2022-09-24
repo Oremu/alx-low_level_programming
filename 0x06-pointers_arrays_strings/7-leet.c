@@ -10,18 +10,16 @@
 
 char *leet(char *z)
 {
-	char arr[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-	char replace[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
-	int i = 0, j = 0;
+	inti, j;
+	char subs[] = "aAeEoOtTlL";
+	char le[] = "43071";
 
-	while (z[i])
+	i = 0;
+	for (i = 0; z[i] != '\0'; i++)
 	{
-		for (j = 0; arr[j]; j++)
-		{
-			if (z[i] == arr[j])
-				z[i] = replace[j];
-		}
-		i++;
+		for (j = 0; subs[j] != '\0'; j++)
+			if (z[i] == subs[j])
+				s[i] = le[j / 2];
 	}
 	return (z);
 }
