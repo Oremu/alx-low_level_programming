@@ -10,16 +10,30 @@
 
 char *leet(char *z)
 {
-	int i, j;
-	char subs[] = "aAeEoOtTlL";
-	char le[] = "43071";
+	int i;
 
-	i = 0;
 	for (i = 0; z[i] != '\0'; i++)
 	{
-		for (j = 0; subs[j] != '\0'; j++)
-			if (z[i] == subs[j])
-				s[i] = le[j / 2];
+		if (z[i] == 'a' || z[i] == 'A')
+		{
+			z[i] = '4';
+		}
+		else if (z[i] == 'e' || z[i] == 'E')
+		{
+			z[i] = '3';
+		}
+		else if (z[i] == 'o' || z[i] == '0')
+		{
+			z[i] = '0';
+		}
+		else if (z[i] == 't' || z[i] == 'T')
+		{
+			z[i] = '7';
+		}
+		else if (z[i] == '1' || z[i] == 'L')
+		{
+			z[i] = '1';
+		}
 	}
 	return (z);
 }
