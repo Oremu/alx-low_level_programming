@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * leet - this function replaces a bunch of numbers with letters
