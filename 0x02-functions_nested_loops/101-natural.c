@@ -17,5 +17,5 @@ int main(void)
 		i++;
 	}
 	printf("%d\n", z);
-	reeturn (0);
+	return (0);
 }
