@@ -3,7 +3,8 @@
 /**
  * print_taimes_table - prints a multiplication table up to param
  * @n: the number to be checked
- *
+ *Description: this prints in multiples
+
  * Return: number matrix
  */
 void print_times_table(int n)
@@ -14,7 +15,7 @@ void print_times_table(int n)
 	{
 		for (x = 0; x <= n; x++)
 		{
-			for(y = 0; y <= n; y++)
+			for (y = 0; y <= n; y++)
 			{
 				z = x *y;
 				if (z > 99)
