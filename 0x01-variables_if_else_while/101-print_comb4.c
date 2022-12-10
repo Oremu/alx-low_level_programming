@@ -7,22 +7,22 @@
  */
 int main(void)
 {
-	int hundreds = 'a';
-	int tens = 'b';
-	int ones =  'c';
+	int hundreds;
+	int tens;
+	int ones;
 	int combo;
 
 	for (combo = 0; combo < 1000; combo++)
 	{
-		a = combo / 100;
-		b = (combo / 10) % 10;
-		c = num % 10;
+		hundreds = combo / 100;
+		tens = (combo / 10) % 10;
+		ones = num % 10;
 
-		if (a < b && b < c)
+		if (hundreds < tens && tens < ones)
 		{
-			putchar(a + '0');
-			putchar(b + '0');
-			putchar(c + '0');
+			putchar(hundreds + '0');
+			putchar(tens + '0');
+			putchar(ones + '0');
 
 			if (combo < 700)
 			{
