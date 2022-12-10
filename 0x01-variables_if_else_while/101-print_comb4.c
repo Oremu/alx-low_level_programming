@@ -16,7 +16,7 @@ int main(void)
 	{
 		hundreds = combo / 100;
 		tens = (combo / 10) % 10;
-		ones = num % 10;
+		ones = combo % 10;
 
 		if (hundreds < tens && tens < ones)
 		{
