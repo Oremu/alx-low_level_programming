@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	int hundreds = a;
-	int tens = b;
-	int ones =  c;
+	int hundreds = 'a';
+	int tens = 'b';
+	int ones =  'c';
 	int combo;
 
 	for (combo = 0; combo < 1000; combo++)
