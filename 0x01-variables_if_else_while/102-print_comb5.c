@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * main - A program that prints the combination of all two-digit numbers 0 - 99
