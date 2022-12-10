@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - print if the number is positive, zero or negative
- *
+ *description: the program prints a positive, zero or negative integer
  * return: 0
  */
 int main(void)
