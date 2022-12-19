@@ -7,7 +7,7 @@
  *
  * return: integer
  */
-int -atoi(char *a)
+int _atoi(char *a)
 {
 	int sign;
 	int result, index;
