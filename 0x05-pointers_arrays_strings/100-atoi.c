@@ -43,5 +43,5 @@ int _atoi(char *a)
 	if (e == 0)
 		return (0);
 
-	return (n);
+	return (d);
 }
