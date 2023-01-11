@@ -53,7 +53,7 @@ char *_strdup(char *str)
 
 	size = _strlen(str) + 1;
 
-	p = (char *)malloc(size *sizeof(char));
+	p = (char *)malloc(size * sizeof(char));
 
 	if (p == 0)
 	{
