@@ -28,7 +28,7 @@ char *create_array(unsigned int size, char c)
 	else
 	{
 		p = 0;
-		while (position < size)
+		while (p < size)
 		{
 			*(b + p) = c;
 			p++;
