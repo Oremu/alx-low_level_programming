@@ -22,6 +22,26 @@ int _strlen(char *str)
 }
 
 /**
+ * _strcopy - copies a string pointed to by the src, including the 
+ * terminating null byte, to a buffer pointed to by dest
+ * @dest: The buffer storing the string copy
+ * @src: the source string
+ *
+ * Return: The pointer to dest
+ */
+char *_strcopy(char *dest, char *src)
+{
+	int index = 0;
+
+	for (index = 0; src[index]; index++)
+		dest[index] = src[index];
+
+	dest[index] = '\0';
+
+	return (dest);
+}
+
+/**
  * new_dog - Creates a new dog
  * @name: The name of the dog
  * @age: The age of the dog
