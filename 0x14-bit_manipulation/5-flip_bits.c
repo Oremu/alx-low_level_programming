@@ -6,20 +6,21 @@
  * @n: first number
  * @m: second number to convert to
  * Return: number of bits that was needed to flip
-*/
+ */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-    unsigned long int diff;
-    int counter;
+	unsigned long int diff;
+	int counter;
 
-    diff = n ^ m;
-    counter = 0;
+	diff = n ^ m;
+	counter = 0;
 
-    while (diff)
-    {
-        counter++;
-        diff &= (diff - 1);
-    }
+	while (diff)
+	{
+		counter++;
+		diff &= (diff - 1);
+	}
 
-    return (counter);
+	return (counter);
 }
+
