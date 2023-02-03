@@ -4,11 +4,11 @@
 /**
  * binary_to_uint - convert a binary number to an unsigned int
  * @b: char string
- * Return: converted decimal number or 0 if there is an nnconvertible char
+ * Return: converted decimal number or 0 if there is an unconvertable char
  */
 unsigned int binary_to_uint(const char *b)
 {
-    unsigned int total, power;
+	unsigned int total, power;
 	int len;
 
 	if (b == NULL)
