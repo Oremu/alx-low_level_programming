@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -10,30 +11,24 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *b;
-	unsigned int p;
+	char *p;
+	unsigned int i = 0;
 
 	if (size == 0)
-	{
 		return (NULL);
-	}
 
-	b = (char *) malloc(size * sizeof(c));
+	p = (char *) malloc(sizeof(char) * size);
 
-	if (b == 0)
+	if (p == NULL)
+		return (0);
+
+	while (i < size)
 	{
-		return (NULL);
+		*(p + i) = c;
+		i++;
 	}
 
-	else
-	{
-		p = 0;
-		while (p < size)
-		{
-			*(b + p) = c;
-			p++;
-		}
+	*(p + i) = '\0';
 
-		return (b);
-	}
+	return (p);
 }
