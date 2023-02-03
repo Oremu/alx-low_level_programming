@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_memset _ fills a memory with constant byte
+ * *_memset - fills a memory with constant byte
  * @s: memory area to be filled
  * @b: char to copy
  * @n: number of times to copy b
